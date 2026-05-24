@@ -31,4 +31,4 @@ personalized suggestion for your next 10, 30, or 60 minutes.
 
 ## Live Demo
 
-👉 [Try TinyShift](https://tiny-shift.vercel.app/)
+👉 https://tiny-shift.vercel.app/
