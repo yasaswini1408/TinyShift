@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyShift</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="logo">Tiny<span>Shift</span></div>
+      <div class="tagline">your city + your mood = your next move</div>
+    </div>
+    <div class="card">
+      <label class="input-label">YOUR CITY</label>
+      <input type="text" id="city" class="text-input" placeholder="e.g. Mumbai, London...">
+    </div>
+    <div class="card">
+      <label class="input-label">YOUR MOOD RIGHT NOW</label>
+      <div class="mood-grid">
+        <div class="mood-btn" id="lazy" onclick="selectMood('lazy')">
+          <span class="mood-icon">😴</span>
+          Lazy
+        </div>
+        <div class="mood-btn" id="productive" onclick="selectMood('productive')">
+          <span class="mood-icon">⚡</span>
+          Productive
+        </div>
+        <div class="mood-btn" id="fun" onclick="selectMood('fun')">
+          <span class="mood-icon">🎉</span>
+          Fun
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <label class="input-label">TIME YOU HAVE</label>
+      <div class="time-grid">
+        <div class="time-btn" id="t10" onclick="selectTime('10')">10 min</div>
+        <div class="time-btn" id="t30" onclick="selectTime('30')">30 min</div>
+        <div class="time-btn" id="t60" onclick="selectTime('60')">1 hour</div>
+      </div>
+    </div>
+    <button class="main-btn" onclick="getPlan()">Shift My Day ⚡</button>
+    <button class="surprise-btn" onclick="surpriseMe()">🎲 Surprise Me — decide for me!</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
