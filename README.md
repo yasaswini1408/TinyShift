@@ -1,4 +1,4 @@
-# TinyShift ⚡
+# TinyShift
 
 TinyShift is a smart micro-life assistant that tells you what to do 
 right now — based on your city's live weather, your current mood, 
