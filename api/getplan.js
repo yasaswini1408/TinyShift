@@ -73,11 +73,6 @@ export default async function handler(req, res) {
     const task = reply.match(/TASK:(.*)/)?.[1]?.trim() || "Take a short break!";
     const tip = reply.match(/TIP:(.*)/)?.[1]?.trim() || "Stay hydrated!";
     return res.status(200).json({
-        greeting,
-        task,
-        tip,
-        temp,
-        humidity,
-        timeOfDay
+        greeting,task,tip,temp,humidity,timeOfDay
     });
 }
