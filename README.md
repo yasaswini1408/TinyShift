@@ -29,6 +29,3 @@ personalized suggestion for your next 10, 30, or 60 minutes.
 - Groq AI API (Llama 3.3-70b)
 - Vercel Serverless Functions
 
-## Live Demo
-
-👉 https://tiny-shift.vercel.app/
