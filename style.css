@@ -177,17 +177,18 @@ body {
 .surprise-btn {
   width: 100%;
   padding: 12px;
+  font-weight: bold;
   border-radius: 12px;
-  border: 2px dashed #D4537E;
-  background: #FBEAF0;
-  color: #72243E;
+  border: 2px#c61953;
+  background: #dd3670b8;
+  color: #ffffff;
   font-size: 14px;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
 
 .surprise-btn:hover {
-  background: #f7d6e4;
+  background: #e12a6a;
 }
 
 .surprise-btn:active {
