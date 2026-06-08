@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,109 +10,54 @@
 
 <div class="app-container">
 
-<header class="header">
-    <h1 class="logo">Tiny<span>Shift</span></h1>
-    <p class="tagline">
-        Find something to do based on your mood and free time.
-    </p>
-</header>
+    <header class="header">
+        <h1 class="logo">Tiny<span>Shift</span></h1>
+        <p class="tagline">Find something to do based on your mood and free time.</p>
+    </header>
 
-<div class="card">
-    <label for="cityInput" class="input-label">
-        Your City
-    </label>
-
-    <input
-        type="text"
-        id="cityInput"
-        class="city-input"
-        placeholder="Mumbai, London, New York..."
-    >
-</div>
-
-<div class="card">
-    <label class="input-label">
-        How are you feeling?
-    </label>
-
-    <div class="mood-grid">
-
-        <div
-            class="mood-option"
-            id="moodLazy"
-            onclick="selectMood('lazy')"
-        >
-            <span class="mood-icon">😴</span>
-            Lazy
-        </div>
-
-        <div
-            class="mood-option"
-            id="moodProductive"
-            onclick="selectMood('productive')"
-        >
-            <span class="mood-icon">⚡</span>
-            Productive
-        </div>
-
-        <div
-            class="mood-option"
-            id="moodFun"
-            onclick="selectMood('fun')"
-        >
-            <span class="mood-icon">🎉</span>
-            Fun
-        </div>
-
+    <!-- city-->
+    <div class="card">
+        <label for="cityInput" class="input-label">YOUR CITY</label>
+        <input type="text" id="cityInput" class="city-input" placeholder="Mumbai, London, New York...">
     </div>
-</div>
 
-<div class="card">
-    <label class="input-label">
-        How much time do you have?
-    </label>
-
-    <div class="time-grid">
-
-        <div
-            class="time-option"
-            id="time10"
-            onclick="selectTime('10')"
-        >
-            10 min
+    <!-- to pick mood -->
+    <div class="card">
+        <label class="input-label">HOW ARE YOU FEELING?</label>
+        <div class="mood-grid">
+            <div class="mood-option" id="moodLazy" onclick="selectMood('lazy')">
+                <span class="mood-icon">😴</span>
+                Lazy
+            </div>
+            <div class="mood-option" id="moodProductive" onclick="selectMood('productive')">
+                <span class="mood-icon">⚡</span>
+                Productive
+            </div>
+            <div class="mood-option" id="moodFun" onclick="selectMood('fun')">
+                <span class="mood-icon">🎉</span>
+                Fun
+            </div>
         </div>
-
-        <div
-            class="time-option"
-            id="time30"
-            onclick="selectTime('30')"
-        >
-            30 min
-        </div>
-
-        <div
-            class="time-option"
-            id="time60"
-            onclick="selectTime('60')"
-        >
-            1 hour
-        </div>
-
     </div>
-</div>
 
-<button class="generate-btn" onclick="getPlan()">
-    Find My Next Move
-</button>
+    <!-- time-->
+    <div class="card">
+        <label class="input-label">HOW MUCH TIME DO YOU HAVE?</label>
+        <div class="time-grid">
+            <div class="time-option" id="time10" onclick="selectTime('10')">10 min</div>
+            <div class="time-option" id="time30" onclick="selectTime('30')">30 min</div>
+            <div class="time-option" id="time60" onclick="selectTime('60')">1 hour</div>
+        </div>
+    </div>
 
-<button class="random-btn" onclick="surpriseMe()">
-    Surprise Me
-</button>
+    <button class="generate-btn" onclick="getPlan()">Find My Next Move</button>
+    <button class="random-btn" onclick="surpriseMe()">Surprise Me 🎲</button>
 
-<div id="resultBox"></div>
+    <!-- to show result-->
+    <div id="resultBox"></div>
+
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>

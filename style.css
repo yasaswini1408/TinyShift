@@ -17,6 +17,7 @@ body {
     padding: 1.5rem 1rem;
 }
 
+/* header */
 .header {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -38,8 +39,9 @@ body {
     margin-top: 4px;
 }
 
+/* cards for each section */
 .card {
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #ece9ff;
     border-radius: 16px;
     padding: 1.25rem;
@@ -70,6 +72,7 @@ body {
     background: #fff;
 }
 
+/* mood + time grids both use 3 columns */
 .mood-grid,
 .time-grid {
     display: grid;
@@ -107,6 +110,7 @@ body {
     margin-bottom: 4px;
 }
 
+/* active states - different color per mood */
 .mood-active-lazy {
     border-color: #7f77dd !important;
     background: #eeedfe !important;
@@ -135,6 +139,7 @@ body {
     font-weight: 600;
 }
 
+/* main button */
 .generate-btn {
     width: 100%;
     padding: 14px;
@@ -157,6 +162,7 @@ body {
     transform: scale(0.98);
 }
 
+/* surprise me button */
 .random-btn {
     width: 100%;
     padding: 12px;
@@ -178,6 +184,7 @@ body {
     transform: scale(0.98);
 }
 
+/* result card */
 .result-card {
     background: #fff;
     border: 1px solid #ece9ff;
@@ -234,6 +241,7 @@ body {
     line-height: 1.5;
 }
 
+/* little pills at the bottom showing weather info */
 .weather-row {
     display: flex;
     gap: 6px;
