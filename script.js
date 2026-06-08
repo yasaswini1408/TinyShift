@@ -90,7 +90,7 @@ resultBox.innerHTML = `
 `;
 
 try {
-    const res = await fetch("/api/getPlan", {
+    const res = await fetch("/api/getplan.js", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -166,7 +166,7 @@ try {
     resultBox.innerHTML = `
         <div class="result-card">
             <div class="loading">
-                ❌ Unable to reach server.
+                ${error.message}
             </div>
         </div>
     `;

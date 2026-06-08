@@ -52,32 +52,32 @@ export default async function handler(req, res) {
         };
 
         const prompt = `
-You are TinyShift, a friendly smart life assistant.
+                        You are TinyShift, a friendly smart life assistant.
 
-Here is the user's current situation:
+                        Here is the user's current situation:
 
-- City: ${city}
-- Weather: ${weatherDescription}
-- Temperature: ${temperature}°C
-- Humidity: ${humidity}%
-- Time of day: ${timeOfDay}
-- Mood: ${moodDescriptions[mood]}
-- Time available: ${time} minutes
+                        - City: ${city}
+                        - Weather: ${weatherDescription}
+                        - Temperature: ${temperature}°C
+                        - Humidity: ${humidity}%
+                        - Time of day: ${timeOfDay}
+                        - Mood: ${moodDescriptions[mood]}
+                        - Time available: ${time} minutes
 
-Give them:
+                        Give them:
 
-1. A warm friendly one-line greeting based on weather and time
-2. One specific activity or micro-task they should do right now that fits their mood and available time
-3. One short weather tip
+                        1. A warm friendly one-line greeting based on weather and time
+                        2. One specific activity or micro-task they should do right now that fits their mood and available time
+                        3. One short weather tip
 
-Keep the tone casual, warm and human.
+                        Keep the tone casual, warm and human.
 
-Format exactly like this:
+                        Format exactly like this:
 
-GREETING: (your greeting here)
-TASK: (your task suggestion here)
-TIP: (your weather tip here)
-`;
+                        GREETING: (your greeting here)
+                        TASK: (your task suggestion here)
+                        TIP: (your weather tip here)
+                        `;
 
         const aiResponse = await fetch(
             "https://api.groq.com/openai/v1/chat/completions",
