@@ -26,6 +26,6 @@ personalized suggestion for your next 10, 30, or 60 minutes.
 
 - HTML, CSS, JavaScript
 - OpenWeatherMap API
-- Groq AI API (Llama 3.3-70b)
+- Groq AI API (groq/compound-mini)
 - Vercel Serverless Functions
 
